@@ -1,0 +1,9 @@
+<!doctype html><meta charset="utf-8"><meta name="robots" content="noindex"><title>Opening Obsidian</title>
+<body style="font-family:system-ui,sans-serif;padding:40px;color:#333"><p id="m">Opening in Obsidian...</p>
+<script>
+var f=new URLSearchParams(location.search).get("f")||"";
+var u="obsidian://open?vault=AD%20OS&file="+encodeURIComponent(f);
+var m=document.getElementById("m"); m.textContent="Opening in Obsidian. Nothing happening? ";
+var a=document.createElement("a"); a.href=u; a.textContent="Tap here"; m.appendChild(a);
+if(f) location.href=u;
+</script>
